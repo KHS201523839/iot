@@ -40,7 +40,7 @@ void toggleLED(int ledPin) {
 }
 void loop() {
   if (digitalRead(swInput) == HIGH) { //스위치가 눌러졌으면
-    swCount = swCount + 1;  // 누른 횟수 1 증가
+    swCount = swCount + 2;  // 누른 횟수 1 증가
     Serial.print("스위치 누른 횟수: ");
     Serial.println(swCount);  //swCount 값 전송
     delay(300); // delay(300)을 생략한 경우 동작 확인.
